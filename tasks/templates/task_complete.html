@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card tasks" style="width: 40rem; margin: auto; margin-top: 5%;">
+    <div class="card-header task-header">
+        Add Task
+    </div>
+    <ul class="list-group list-group-flush task-list">
+        <li class="list-group-item task-entry">
+            <form action="" method="post" class="task-form complete">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" value=Complete class="btn btn-primary submit">
+            </form>
+        </li>
+    </ul>
+</div>
+{% endblock %}

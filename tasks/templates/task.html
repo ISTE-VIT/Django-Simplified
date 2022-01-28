@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<div class="card tasks" style="width: 40rem; margin: auto; margin-top: 5%;">
+    {% if object_list|length != 0 %}
+    <div class="card-header task-header">
+        To do List
+    </div>
+    {% endif %}
+    <ul class="list-group list-group-flush task-list">
+        {% for task in object_list %}
+        <li class="list-group-item task-entry">
+            {% if task.complete == False %}
+            <a href="{% url 'task-complete' pk=task.id %}"><img src="{% static 'tick.svg' %}" alt=""></a>
+            <a href="{% url 'task-detail' pk=task.id %}" class="task-link">{{task.title}}</a>
+            {% else %}
+            <img src="{% static 'done.svg' %}" alt="">
+            <a href="{% url 'task-detail' pk=task.id %}" class="task-link"><s>{{task.title}}</s></a>
+            {% endif %}
+            <a href="{% url 'task-delete' pk=task.id %}" class="delete-btn"><img src="{% static 'delete.svg' %}"alt=""></a>
+            <a href="{% url 'task-update' pk=task.id %}" class="btn btn-primary edit-btn">Edit</a>
+        </li>
+        {% empty %}
+        <img src="{% static 'empty.png'%}" height="324" width="312" style="margin-left: 35% ;" alt="">
+        {% endfor %}
+    </ul>
+</div>
+<a href="{% url 'task-add' %}" class="btn btn-primary add-task">Add Task</a>
+{% else %}
+
+<div class="card tasks" style="width: 40rem; margin: auto; margin-top: 5%;">
+    <div class="card-header task-header">
+        Login to continue
+    </div>
+</div>
+<img src="{% static 'login2.png'%}" height="405" width="390" style="margin-left: 40% ;" alt="">
+{% endif %}
+{% endblock %}
