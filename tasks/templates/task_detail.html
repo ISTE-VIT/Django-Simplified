@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if task.user == user %}
+    <div class="card tasks" style="width: 40rem; margin: auto; margin-top: 5%;">
+        <div class="card-header task-header">
+            {{task.title}}
+        </div>
+        <ul class="list-group list-group-flush task-list">
+            <li class="list-group-item task-entry">
+                {{task.body}}
+            </li>
+            
+        </ul>
+        
+    </div>
+    <a href="{% url 'tasks' %}" class="btn btn-primary add-task">Back</a>
+{% else %}
+<div class="card tasks" style="width: 40rem; margin: auto; margin-top: 5%;">
+    <div class="card-header task-header">
+        Not allowed here !
+    </div>
+</div>
+<img src="{% static 'login2.png'%}" height="405" width="390" style="margin-left: 40% ;" alt="">
+{% endif %}
+{% endblock %}

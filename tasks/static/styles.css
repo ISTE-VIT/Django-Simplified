@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+        body{
+            background-color: #1b1464ff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .top{
+            background-color: #E94560;
+        }
+        .tasks{
+            background-color: #1b1464ff;
+            color: #e72444;
+            border: none;
+        }
+
+        .task-header{
+            font-size: 25px;
+            font-weight: bolder;
+            background-color: #E94560;
+            color: white;
+            text-align: center;
+        }
+
+        .task-list{
+            margin-top: 3px;
+            font-size: 20px;
+        }
+
+
+        .task-link{
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .add-task{
+            margin-top: 1%;
+            margin-left: 35%;
+            width: 30%;
+            font-weight:1000;
+            font-size: 20px;
+            background-color: #E94560;
+            border-color: #E94560;
+            border-radius: 10px;
+        }
+        .add-task:hover{
+            margin-top: 1%;
+            margin-left: 35%;
+            width: 30%;
+            font-weight: 1000;
+            font-size: 20px;
+            background-color: #e72444;
+            border-color: #e72444;
+            color: #fafafa;
+            border-radius: 10px;
+        }
+        label{
+            color: black;
+            font-weight: 1000;
+            margin: 2%;
+            font-family: 'Poppins';
+        }
+        textarea{
+            height: 100px;
+        }
+        .task-form{
+            width:100%;
+        }
+        .submit{
+            float:right;
+            background-color: #E94560;
+            font-weight: bolder;
+            border-color: #E94560;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 2%;
+        }
+        .submit:hover{
+            float:right;
+            background-color: #e72444;
+            font-weight: bolder;
+            border-color: #e72444;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        .delete-text{
+            text-align: center;
+        }
+
+        .edit-btn:hover{
+            float:right;
+            background-color: #e72444;
+            font-weight: bold;
+            border-color: #e72444;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .edit-btn{
+            float:right;
+            background-color: #E94560;
+            font-weight: bold;
+            border-color: #E94560;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .delete-btn{
+            float: right;
+            margin-right: 2%;
+            margin-left: 4%;
+        }
+        s{
+            color: rgb(144, 144, 144);
+        }
+
+        img{
+            margin-right: 8px;
+        }
+
+        #id_complete{
+            height: 20px;
+            width: 20px;
+            border-radius: 3px;
+            background-color: #E94560;
+            
+        }
+         #id_complete:checked{
+            height: 20px;
+            width: 20px;
+            border-radius: 3px;
+            background-color: #E94560;
+            color: #E94560;
+            
+        }
+        .complete input[type="checkboc"]{
+            position:absolute;
+            top: 27px;
+            left: 150px;
+        }
+        h4{
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        h3{
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            margin-right: -120px;
+            font-size: 20px;
+        }
+        .nav-btn{
+            color: #E94560;
+            background-color: #fafafa;
+            font-size: 18px;
+            padding: 5px;
+            font-weight: bold;
+            border-color: #fafafa;
+            margin: 5px;
+        }
+        .nav-btn:hover{
+            color: #E94560;
+            background-color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-color: white;
+        }
