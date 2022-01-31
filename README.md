@@ -14,7 +14,7 @@ Django which is a python based web framework is used to build web applications. 
 
 ## Slides 📽
 
-* [Link to the Slides]()
+* [Link to the Slides](https://docs.google.com/presentation/d/1aJGsexNj_aAG49Uu5H41vew5nhpqt3elfa15HMSt7bw/edit?usp=sharing)
 
 ## List Of Contents 📚
 
